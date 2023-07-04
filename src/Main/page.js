@@ -1,9 +1,9 @@
-import './styles.css';
+import './style.css';
 
 function Main() {
   return (
     <div >
-      <h1>Em obras...</h1>
+      <h1>Em obra...</h1>
     </div>
   );
 }
