@@ -1,1 +1,2 @@
-# PROJETO DE SITE QUE COMPARA PREÇOS DE PRODUTOS ELETRONICOS.
+# Projeto de site que compara preço de produtos eletronicos.
+
