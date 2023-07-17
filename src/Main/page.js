@@ -2,8 +2,9 @@ import './style.css';
 
 function Main() {
   return (
-    <div >
+    <div className='container-main'>
       <h1>Em obra...</h1>
+
     </div>
   );
 }

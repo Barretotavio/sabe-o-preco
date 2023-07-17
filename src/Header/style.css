@@ -10,13 +10,16 @@ header {
     outline: 3px solid black;
 
     height: 60px;
+
+    position: sticky;
+    top: 0;
 }
 
 input {
     all: unset;
     box-sizing: border-box;
 
-    width: 400px;
+    width: 600px;
     padding: 5px 15px;
 
     border: 2px solid rgb(109, 108, 108);
@@ -27,7 +30,7 @@ input {
 }
 
 input::placeholder {
-    padding-left: 70px;
+    padding-left: 10px;
 }
 
 input:focus {
