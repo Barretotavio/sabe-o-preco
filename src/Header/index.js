@@ -2,17 +2,22 @@ import './style.css';
 
 function Header() {
 
-  const input = document.querySelector('input');
-
-  function pesquisarProduto() {
-
+  function handleInput(event) {
+    console.log(event.target.value);
   }
+
 
   return (
     <header>
       <h1>Sabe o Preço</h1>
-      <div classname='container-input'>
-        <input type='text' placeholder="Qual produto está procurando?" onKeyDown={pesquisarProduto()} />
+      <div className='container-input'>
+        <input id='input-search' type='text'
+          placeholder="Qual produto está procurando?"
+          onInput={(event) => handleInput(event)}
+        />
+      </div>
+      <div className='container-btn'>
+        {/* <img id='btn-search' src='../assets/lupa.jpg' alt='Lupa de pesquisa' /> */}
       </div>
       <nav>
         <ul>
