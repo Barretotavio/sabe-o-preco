@@ -1,9 +1,11 @@
 import './style.css';
+import { useRef } from "react";
 
 function Header() {
+  const inputRef = useRef(null);
 
-  function handleInput(event) {
-    console.log(event.target.value);
+  function handleInput() {
+    console.log(inputRef.current.value);
   }
 
 
@@ -13,7 +15,8 @@ function Header() {
       <div className='container-input'>
         <input id='input-search' type='text'
           placeholder="Qual produto está procurando?"
-          onInput={(event) => handleInput(event)}
+          ref={inputRef}
+          onInput={() => handleInput()}
         />
       </div>
       <div className='container-btn'>
